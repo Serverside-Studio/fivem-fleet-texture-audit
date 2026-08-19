@@ -87,7 +87,7 @@ nobody checks, and it is the cheapest thing in the world to fix.
 
 ## Changelog
 
-See [CHANGELOG.md](CHANGELOG.md). Current release: **v1.0.0** — `.Audit-FleetTextures.ps1 -Version`.
+See [CHANGELOG.md](CHANGELOG.md). Current release: **v1.0.0** — `.\Audit-FleetTextures.ps1 -Version`.
 
 ## Licence
 
