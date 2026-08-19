@@ -89,6 +89,17 @@ nobody checks, and it is the cheapest thing in the world to fix.
 
 See [CHANGELOG.md](CHANGELOG.md). Current release: **v1.0.0** — `.\Audit-FleetTextures.ps1 -Version`.
 
+## Want it as a report, or the waste actually removed?
+
+This tool gives you the numbers. Turning them into a decision - which vehicles to
+recompress, which to cut, and doing it without breaking a live fleet - is what
+[Sector 5 Development](https://github.com/bryansanchez379-ui) does for a living.
+
+A client-facing **Fleet Health Report** covers texture weight alongside the things
+that actually take a server down: duplicate spawn names, colliding modkit IDs,
+undefined vehicle layouts, malformed metadata. If your server is already
+misbehaving, that is the faster route.
+
 ## Licence
 
 MIT. Built by [Sector 5 Development](https://github.com/bryansanchez379-ui) — we
