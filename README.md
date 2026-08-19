@@ -85,6 +85,10 @@ the whole fleet being a third larger than it needs to be.
 Uncompressed art is also the most common bloat in bought vehicle packs, because
 nobody checks, and it is the cheapest thing in the world to fix.
 
+## Changelog
+
+See [CHANGELOG.md](CHANGELOG.md). Current release: **v1.0.0** — `.Audit-FleetTextures.ps1 -Version`.
+
 ## Licence
 
 MIT. Built by [Sector 5 Development](https://github.com/bryansanchez379-ui) — we
