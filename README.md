@@ -32,7 +32,37 @@ That first car carries 91 textures and 178 MB because they are stored
 **uncompressed**. Compressed properly it is roughly 50 MB and looks identical in
 game.
 
-## Use it
+## Two modes
+
+**Log mode needs nothing but a console log.** Your server already reports what
+every streamed asset costs, on every boot:
+
+```
+Asset vehicles_core/somecar.ytd uses 42.0 MiB of physical memory
+```
+
+So you can size a fleet with no CodeWalker, no file access, and no install —
+including a server you only have the console for.
+
+```powershell
+.\Audit-FleetTextures.ps1 -LogPath fxserver.log
+.\Audit-FleetTextures.ps1 -LogPath fxserver.log -Json fleet.json -Top 25
+```
+
+It reports total streamed memory, the heaviest assets, a per-resource
+breakdown, and how concentrated the weight is — which is the part that changes
+what you do next. If the heaviest 100 assets are 5% of your total, there is no
+short list of bad apples to fix; it is the whole fleet.
+
+The same asset is logged on every load and after every restart, so readings are
+de-duplicated by asset rather than summed. A server that restarted four times
+does not report a fleet four times its real size.
+
+**Log mode reports cost, never recoverable waste.** Knowing an asset costs
+42 MiB tells you nothing about whether it is uncompressed — that needs the
+texture headers. For the recoverable figure, use the full mode below.
+
+## Full mode
 
 Needs Windows PowerShell 5.1 and `CodeWalker.Core.dll` (plus `SharpDX.dll` and
 `SharpDX.Mathematics.dll`) from a [CodeWalker](https://github.com/dexyfex/CodeWalker)
