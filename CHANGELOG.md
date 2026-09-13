@@ -56,4 +56,4 @@ First public release.
   non-ASCII character inside a string is enough to stop the script parsing on
   another machine even though it runs fine on the author's.
 
-[1.0.0]: https://github.com/bryansanchez379-ui/fivem-fleet-texture-audit/releases/tag/v1.0.0
+[1.0.0]: https://github.com/Serverside-Studio/fivem-fleet-texture-audit/releases/tag/v1.0.0

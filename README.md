@@ -123,7 +123,7 @@ See [CHANGELOG.md](CHANGELOG.md). Current release: **v1.0.0** — `.\Audit-Fleet
 
 This tool gives you the numbers. Turning them into a decision - which vehicles to
 recompress, which to cut, and doing it without breaking a live fleet - is what
-[Sector 5 Development](https://github.com/bryansanchez379-ui) does for a living.
+[Serverside](https://github.com/bryansanchez379-ui) does for a living.
 
 A client-facing **Fleet Health Report** covers texture weight alongside the things
 that actually take a server down: duplicate spawn names, colliding modkit IDs,
@@ -132,7 +132,7 @@ misbehaving, that is the faster route.
 
 ## Licence
 
-MIT. Built by [Sector 5 Development](https://github.com/bryansanchez379-ui) — we
+MIT. Built by [Serverside](https://github.com/bryansanchez379-ui) — we
 build the software game communities run on.
 
 Not affiliated with Rockstar Games, Cfx.re or the CodeWalker project.
